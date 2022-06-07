@@ -13,7 +13,6 @@ const connectionOptions = { useUnifiedTopology: true, useNewUrlParser: true, use
 app.use(cors())
 app.use(express.json())
 
-//mongoose.connect('mongodb://localhost:27017/full-mern-stack-video')
 
 
 mongoose.connect("mongodb://localhost/todolist", connectionOptions)
