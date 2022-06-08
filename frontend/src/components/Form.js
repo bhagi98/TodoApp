@@ -28,7 +28,7 @@ const Form = ({ addTodo }) => {
                     </div>
 
                     <div className="column one wide">
-                        <button data-testid = "formAddButton" type="submit" className="ui button circular icon purple"><i className="white plus icon"></i></button>
+                        <button data-testid = "formAddButton" name="Add" type="submit" className="ui button circular icon purple"><i className="white plus icon"></i></button>
                     </div>
                 </div>
             </div>

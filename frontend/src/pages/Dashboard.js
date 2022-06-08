@@ -8,7 +8,6 @@ import List from "../components/List";
 import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
 import Header from './Header';
 
-const appTitle = "Todo List";
 
 
 const Dashboard = () => {
@@ -75,8 +74,7 @@ const Dashboard = () => {
 
 		<div className="ui container center aligned">
 			<Section>
-			<FormatListNumberedIcon />	<Header title="Todo List"> </Header>
-				
+				<FormatListNumberedIcon />	<Header title="Todo List"> </Header>
 			</Section>
 
 			<Section>
