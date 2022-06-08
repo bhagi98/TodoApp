@@ -1,10 +1,11 @@
 const router = require("express").Router();
 const Todo = require("../models/Todo");
 
-router.get("/", (req, res) => {
+router.get("/", (req, res, next) => {
     Todo.find((err, result) => {
-        if(err) throw new Error(err);
-        res.json(result);
+        if(err)
+         throw new Error(err);
+       res.json(result);
     });
 });
 

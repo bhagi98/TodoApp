@@ -12,6 +12,7 @@ describe("Form component Input and Add Button", () => {
         const input = getByTestId("formComponent");
         expect(input).toBeTruthy();
     });
+    
     it("rendered button", () => {
         const { getByTestId } = render(<Form showDiv={false} />);
         const addButton = getByTestId("formAddButton");
@@ -22,7 +23,6 @@ describe("Form component Input and Add Button", () => {
 describe("Add todo Item", () => {
     it('Should render input element', async () => {
         render(
-
             <Form
                 inputValue={[]}
                 setInputValue={mockedSetTodo}
