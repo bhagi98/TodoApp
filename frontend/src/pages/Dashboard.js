@@ -6,7 +6,7 @@ import Form from "../components/Form";
 import Section from "../components/Section";
 import List from "../components/List";
 import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
-
+import Header from './Header';
 
 const appTitle = "Todo List";
 
@@ -75,7 +75,8 @@ const Dashboard = () => {
 
 		<div className="ui container center aligned">
 			<Section>
-				<h1 className='ui header purple'><FormatListNumberedIcon />{appTitle}</h1>
+			<FormatListNumberedIcon />	<Header title="Todo List"> </Header>
+				
 			</Section>
 
 			<Section>

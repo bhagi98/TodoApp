@@ -20,6 +20,7 @@ const Form = ({ addTodo }) => {
                 <div className="row">
                     <div className="column five wide">
                         <input
+                            data-testid = "formComponent"
                             value={inputValue}
                             onChange={handleInputChange}
                             type="text"
@@ -27,7 +28,7 @@ const Form = ({ addTodo }) => {
                     </div>
 
                     <div className="column one wide">
-                        <button type="submit" className="ui button circular icon purple"><i className="white plus icon"></i></button>
+                        <button data-testid = "formAddButton" type="submit" className="ui button circular icon purple"><i className="white plus icon"></i></button>
                     </div>
                 </div>
             </div>
