@@ -2,7 +2,7 @@ import { useState } from 'react'
 import React from 'react'
 import Avatar from '@mui/material/Avatar';
 import {
-	Checkbox,
+
 	Grid,
 	TextField,
 	FormControlLabel,
@@ -10,6 +10,8 @@ import {
 	Button
 
 } from '@material-ui/core';
+import Checkbox from '@mui/material/Checkbox';
+
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import { deepPurple } from '@mui/material/colors';
 
@@ -52,13 +54,14 @@ function App() {
 		<div>
 			<div style={{ padding: 30 }} >
 				<form onSubmit={loginUser}>
-					<Paper style={{ padding: 30, backgroundColor: "#eadff5" }}>
+					<Paper style={{ padding: 150, backgroundColor: "#eadff5" }}>
 						<Grid
 							container
 							spacing={3}
 							direction={'column'}
 							justify={'center'}
 							alignItems={'center'}
+
 						>
 							<Avatar sx={{ bgcolor: deepPurple[300] }}>
 								<LockOpenIcon />
@@ -88,6 +91,7 @@ function App() {
 								<FormControlLabel
 									control={
 										<Checkbox
+											color="secondary"
 											checked={checked}
 											onChange={handleChange}
 											label={'Keep me logged in'}

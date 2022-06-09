@@ -44,7 +44,7 @@ function App() {
 		<div>
 			<div style={{ padding: 30 }} >
 				<form onSubmit={registerUser}>
-					<Paper style={{ padding: 30, backgroundColor: "#eadff5" }}>
+					<Paper style={{ padding: 150, backgroundColor: "#eadff5" }}>
 						<Grid
 							container
 							spacing={3}

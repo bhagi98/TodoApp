@@ -4,8 +4,8 @@ const Todo = require("../models/Todo");
 router.get("/", (req, res, next) => {
     Todo.find((err, result) => {
         if(err)
-         throw new Error(err);
-       res.json(result);
+        throw new Error(err);
+        res.json(result);
     });
 });
 
